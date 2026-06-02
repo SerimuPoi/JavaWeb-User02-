@@ -6,6 +6,12 @@ public class User {
     private String upwd;
     private int type;
 
+    public User(String uname, String upwd, int type) {
+        this.uname = uname;
+        this.upwd = upwd;
+        this.type = type;
+    }
+
     public int getId() {
         return id;
     }

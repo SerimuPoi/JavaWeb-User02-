@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <title>Title</title>
+</head>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/ace.min.css">
+<link rel="stylesheet" href="css/ace-skins.min.css">
+<link rel="stylesheet" href="css/ace-responsive.min.css">
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    #sidebar{
+        left: 0;
+        margin-top: 0;
+    }
+    body,html{
+        width: 100%;
+        height: 100%;
+    }
+    .blue{
+        color:blue;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+</style>
+
+<body>
+<div class="navbar navbar-inverse">
+    <div class="navbar-inner" style="background:#0099CC;">
+        <div class="container-fluid">
+            <a class="brand">
+                <small><i class="icon-leaf"></i>������ʵѵƽ̨</small>
+            </a>
+
+            <ul class="nav ace-nav pull-right">
+
+                <li class="light-blue user-profile">
+                    <a class="user-menu dropdown-toggle" href="javascript:;" data-toggle="dropdown">
+                        <img alt="LRJ" src="image/avatar.jpg" class="nav-user-photo">
+                        <span id="user_info"><small>Welcome</small>������ʵѵƽ̨</span>
+                        <i class="icon-caret-down"></i>
+                    </a>
+                    <ul id="user_menu" class="pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+
+
+                        <li><a href="login.html"><i class="icon-off"></i> �˳�</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="sidebar" style="float: left">
+    <div id="sidebar-shortcuts">
+
+        <div id="sidebar-shortcuts-large">
+
+            <button class="btn btn-small btn-success"><i class="icon-signal"></i></button>
+
+            <button class="btn btn-small btn-info"><i class="icon-pencil"></i></button>
+
+            <button class="btn btn-small btn-warning"><i class="icon-group"></i></button>
+
+            <button class="btn btn-small btn-danger"><i class="icon-cogs"></i></button>
+
+        </div>
+
+        <div id="sidebar-shortcuts-mini">
+
+            <span class="btn btn-success"></span>
+
+            <span class="btn btn-info"></span>
+
+            <span class="btn btn-warning"></span>
+
+            <span class="btn btn-danger"></span>
+
+        </div>
+
+    </div><!-- #sidebar-shortcuts -->
+
+
+
+
+
+
+    <!--��һ��ģ��-->
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseOne">
+                        Ա������ģ��
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <a href="/findUser" target="myframe">Ա����Ϣ</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+<div style="float: right;margin-top: -20px">
+    <iframe id="menuFrame" name="myframe" src="" frameborder="no" width="1500px" height="790px">
+    </iframe>
+</div>
+</body>
+
+</html>

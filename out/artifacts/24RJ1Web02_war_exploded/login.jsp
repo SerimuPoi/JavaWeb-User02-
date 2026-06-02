@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      function addUser(){
+        location.href="addUser.jsp";
+      }
+    </script>
+
 
     <style type="text/css">
       #main{
@@ -41,7 +47,7 @@
       </div>
 
       <input type="submit" class="btn btn-default" value="提交">
-
+      <input type="button" class="btn btn-default" value="注册" onclick="addUser()">
     </form>
   </div>
   </body>

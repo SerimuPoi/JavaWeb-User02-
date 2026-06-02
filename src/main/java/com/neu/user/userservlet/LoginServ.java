@@ -36,9 +36,16 @@ public class LoginServ extends HttpServlet {
         HttpSession session = req.getSession();
         session.setAttribute("user", user);
         if (user!=null){
-            req.getRequestDispatcher("findUser").forward(req, resp);
-        }else {
-            resp.sendRedirect("login.jsp");
+                if (user.getType()==1) {
+                req.getRequestDispatcher("index.html").forward(req, resp);
+                }else if (user.getType()==2) {
+                req.getRequestDispatcher("doctor.jsp").forward(req, resp);
+                }else if (user.getType()==3) {
+                req.getRequestDispatcher("finUser.jsp").forward(req, resp);
+                }
+
+        } else {
+                resp.sendRedirect("login.jsp");
         }
     }
 }
