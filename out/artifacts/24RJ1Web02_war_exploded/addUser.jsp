@@ -13,6 +13,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+        #main{
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 <div id="main">

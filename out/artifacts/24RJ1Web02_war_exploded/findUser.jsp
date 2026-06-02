@@ -31,6 +31,13 @@
     </style>
 </head>
 <body>
+<div id="daohang">
+    <ul>
+        <li><a href="paiban">医生值班</a></li>
+        <li><a href="guahao">挂号</a></li>
+        <li><a href="tuihao">退号</a></li>
+    </ul>
+</div>
 <p class="name">
     ${sessionScope.user.uname} 登录成功
 </p>
