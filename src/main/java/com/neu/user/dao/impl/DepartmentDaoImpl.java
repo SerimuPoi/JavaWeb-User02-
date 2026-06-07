@@ -36,10 +36,10 @@ public class DepartmentDaoImpl extends BaseDao implements DepartmentDao {
             while (rs != null && rs.next()){
                 Department dept = new Department();
                 dept.setId(rs.getInt("id"));
-                dept.setDeptCode("dept_code");
-                dept.setDeptName("dept_name");
-                dept.setDeptCategory("dept_category");
-                dept.setDeptType("dept_type");
+                dept.setDeptCode(rs.getString("dept_code"));
+                dept.setDeptName(rs.getString("dept_name"));
+                dept.setDeptCategory(rs.getString("dept_category"));
+                dept.setDeptType(rs.getString("dept_type"));
                 list.add(dept);
             }
         }catch (Exception e){

@@ -35,6 +35,13 @@
     <a href="addDepartment.jsp" class="btn btn-success">新增科室</a>
   </div>
 
+  <div id="findDeptName">
+    <form action="findDepartmentByName" method="post">
+      <input type="text" name="deptName">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>科室列表</caption>
     <thead>

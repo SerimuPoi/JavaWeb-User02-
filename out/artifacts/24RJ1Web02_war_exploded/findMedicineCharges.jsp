@@ -19,6 +19,14 @@
 <body>
 <div id="main">
   <div style="margin-bottom: 15px;"><a href="addMedicineCharges.jsp" class="btn btn-success">新增药品</a></div>
+
+  <div id="findMedName">
+    <form action="findMedicineChargesByName" method="post">
+      <input type="text" name="medName">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>药品库存列表</caption>
     <thead>

@@ -43,12 +43,17 @@
 </p>
 
 <div id="main">
+    <div style="margin-bottom: 15px;">
+        <a href="addUser.jsp" class="btn btn-success">新增用户</a>
+    </div>
+
     <div id="findUserName">
         <form action="findByUserServ" method="post">
         <input type="text" name="uname">
         <input type="submit" value="查询">
         </form>
     </div>
+
     <table class="table table-hover">
         <caption>用户信息</caption>
         <thead>
@@ -68,8 +73,8 @@
                 <td>${u.upwd}</td>
                 <td>${u.type}</td>
                 <td>
-                    <button type="button" class="btn btn-primary" onclick="delUser(${u.id})">删除</button>
-                    <button type="button" class="btn btn-primary" onclick="findByUser(${u.id})">修改</button>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="delUser(${u.id})">删除</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="findByUser(${u.id})">修改</button>
                 </td>
             </tr>
         </c:forEach>

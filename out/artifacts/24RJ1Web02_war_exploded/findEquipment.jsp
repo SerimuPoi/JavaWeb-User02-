@@ -23,6 +23,14 @@
   <div style="margin-bottom: 15px;">
     <a href="addEquipment.jsp" class="btn btn-success">新增器材</a>
   </div>
+
+  <div id="findEquipName">
+    <form action="findEquipmentByName" method="post">
+      <input type="text" name="equipName">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>器材列表</caption>
     <thead>

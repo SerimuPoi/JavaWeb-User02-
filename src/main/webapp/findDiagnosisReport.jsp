@@ -34,6 +34,13 @@
     <a href="addDiagnosisReport.jsp" class="btn btn-success">新增诊断报告</a>
   </div>
 
+  <div id="findDiseaseName">
+    <form action="findDiagnosisReportByName" method="post">
+      <input type="text" name="diseaseName">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>诊断报告列表</caption>
     <thead>

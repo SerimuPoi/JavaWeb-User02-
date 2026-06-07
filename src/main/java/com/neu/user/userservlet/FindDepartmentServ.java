@@ -26,8 +26,8 @@ public class FindDepartmentServ extends HttpServlet {
         resp.setContentType("text/html;charset=utf-8");
 
         DepartmentBiz biz = new DepartmentBizImpl();
-        List<Department> list = biz.finaAll();
-        req.setAttribute("deptlist", list);
+        List<Department> list = biz.findAll();
+        req.setAttribute("deptList", list);
         req.getRequestDispatcher("/findDepartment.jsp").forward(req, resp);
     }
 }

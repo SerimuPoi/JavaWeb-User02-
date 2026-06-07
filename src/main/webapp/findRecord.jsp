@@ -19,6 +19,14 @@
 <body>
 <div id="main">
   <div style="margin-bottom: 15px;"><a href="addRecord.jsp" class="btn btn-success">新增病历</a></div>
+
+  <div id="findPatientName" >
+    <form action="findRecordByName" method="post">
+      <input type="text" name="patientName" >
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>病历信息列表</caption>
     <thead>

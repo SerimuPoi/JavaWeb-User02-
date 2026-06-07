@@ -36,7 +36,7 @@
 
     <div class="form-group">
       <label>器材数量</label>
-      input type="number" class="form-control" name="equipQuantity">
+      <input type="number" class="form-control" name="equipQuantity">
     </div>
 
     <input type="submit" class="btn btn-default" value="提交">

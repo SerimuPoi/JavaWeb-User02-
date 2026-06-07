@@ -19,6 +19,14 @@
 <body>
 <div id="main">
   <div style="margin-bottom: 15px;"><a href="addPrescription.jsp" class="btn btn-success">新增处方</a></div>
+
+  <div id="findPatientName">
+    <form action="findPrescriptionByName" method="post">
+      <input type="text" name="patientName"">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>处方信息列表</caption>
     <thead>

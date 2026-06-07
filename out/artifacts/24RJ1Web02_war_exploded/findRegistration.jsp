@@ -19,6 +19,14 @@
 <body>
 <div id="main">
   <div style="margin-bottom: 15px;"><a href="addRegistration.jsp" class="btn btn-success">新增挂号类型</a></div>
+
+  <div id="findRegName">
+    <form action="findRegistrationByName" method="post">
+      <input type="text" name="regName">
+      <input type="submit" value="查询">
+    </form>
+  </div>
+
   <table class="table table-hover">
     <caption>挂号类型列表</caption>
     <thead>

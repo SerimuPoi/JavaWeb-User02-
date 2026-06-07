@@ -33,6 +33,6 @@ public class DepartmentBizImpl implements DepartmentBiz {
 
     @Override
     public List<Department> findAll() {
-        return Collections.emptyList();
+        return deptDao.findAll();
     }
 }
